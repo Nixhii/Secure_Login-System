@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Home - SecureApp{% endblock %}
+{% block content %}
+<div class="hero">
+    <h1>Welcome to SecureApp</h1>
+    <p>A secure authentication demo built with Flask, SQLite, and bcrypt.</p>
+    {% if not session.logged_in %}
+        <div class="cta-buttons">
+            <a href="{{ url_for('login') }}" class="btn btn-primary">Login</a>
+            <a href="{{ url_for('register') }}" class="btn btn-secondary">Register</a>
+        </div>
+    {% else %}
+        <a href="{{ url_for('dashboard') }}" class="btn btn-primary">Go to Dashboard</a>
+    {% endif %}
+</div>
+
+<div class="features">
+    <div class="feature-card">
+        <h3>Bcrypt Hashing</h3>
+        <p>Passwords are hashed using bcrypt with salt rounds for maximum security.</p>
+    </div>
+    <div class="feature-card">
+        <h3>Input Validation</h3>
+        <p>All inputs are validated on the server side with strict rules and regex patterns.</p>
+    </div>
+    <div class="feature-card">
+        <h3>Session Management</h3>
+        <p>Secure HTTP-only cookies with SameSite=Lax and configurable session lifetime.</p>
+    </div>
+    <div class="feature-card">
+        <h3>SQLite Database</h3>
+        <p>User data stored in SQLite with WAL mode and parameterized queries to prevent SQL injection.</p>
+    </div>
+</div>
+{% endblock %}

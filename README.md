@@ -65,12 +65,10 @@ Secure-Login-System/
 │   └── style.css
 │
 └── Screenshots/
-    ├── home.png
+    ├── Home.png
     ├── register.png
-    ├── login.png
     ├── dashboard.png
-    ├── invalid_login.png
-    └── logout.png
+    
 ```
 
 ---

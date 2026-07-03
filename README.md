@@ -164,27 +164,15 @@ Users can securely log out, ending the active session.
 
 ### Home Page
 
-![Home](Screenshots/home.png)
+![Home](Screenshots/Home.png)
 
 ### Registration Page
 
 ![Register](Screenshots/register.png)
 
-### Login Page
-
-![Login](Screenshots/login.png)
-
 ### Dashboard
 
 ![Dashboard](Screenshots/dashboard.png)
-
-### Invalid Login
-
-![Invalid Login](Screenshots/invalid_login.png)
-
-### Logout
-
-![Logout](Screenshots/logout.png)
 
 ---
 
